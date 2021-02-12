@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23283B"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+
+        app:lottie_fileName="rocket.json"
+        app:lottie_loop="false" />
+
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/as"
+            android:layout_width="@dimen/_250sdp"
+
+            android:layout_height="@dimen/_250sdp"
+            android:layout_gravity="center"
+
+
+
+            android:gravity="center"
+
+            android:scaleType="fitXY"
+
+            android:translationZ="90dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="astro.json"
+            app:lottie_loop="true" />
+
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_80sdp"
+        android:textStyle="bold"
+
+
+
+        android:translationZ="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/as" />
+
+    <TextView
+        android:id="@+id/peopetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:fontFamily="@font/space"
+        android:text="People in Space"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peopetext"
+        app:srcCompat="@drawable/rocketlast" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

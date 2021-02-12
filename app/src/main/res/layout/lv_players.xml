@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/night"
+    android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/aksiyon"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+
+        android:layout_rowWeight="1"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        >
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="left"
+                android:id="@+id/imageview"
+
+
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/night"
+
+
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/icon"
+                >
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+            <LinearLayout
+                android:layout_gravity="left|center"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+
+                    android:layout_marginBottom="2dp"
+
+
+                    android:layout_gravity="left|top"
+                    android:textColor="@color/night"
+                    android:textSize="18sp"
+
+
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/night"></View>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/flag"
+
+
+                        android:layout_gravity="left|center"
+                        android:textColor="@color/night"
+
+android:src="@drawable/loding"
+                        android:scaleType="centerCrop"
+                        android:textStyle="bold"
+                        android:layout_width="25dp"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:id="@+id/task"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:layout_gravity="left|center"
+                        android:textColor="@color/night"
+                        android:textSize="10sp"
+
+
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:id="@+id/day"
+                    android:textAlignment="center"
+
+                    android:layout_gravity="center"
+                    android:textColor="@color/night"
+                    android:textSize="18sp"
+
+
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/inspace"
+                    android:textAlignment="center"
+
+                    android:layout_gravity="left|top"
+                    android:textColor="@color/night"
+                    android:textSize="8sp"
+
+                    android:text="Day In Space"
+
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>

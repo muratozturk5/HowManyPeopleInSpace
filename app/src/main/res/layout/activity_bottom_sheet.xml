@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linerlll"
+
+    tools:context=".BottomSheet"
+    android:orientation="vertical"
+
+    android:translationZ="90dp"
+    app:behavior_hideable="true"
+    app:elevation="0dp"
+    android:outlineProvider="none"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:layout_margin="10dp">
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:outlineProvider="none"
+        android:elevation="4dp"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:outlineProvider="none"
+
+            android:translationZ="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/asimage"
+                android:layout_width="180dp"
+
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/icon"
+                app:civ_border_color="#fff"
+                app:civ_border_width="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/aksiyon"
+            android:outlineProvider="none"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+
+
+
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp">
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="100dp"
+                    android:layout_gravity="center_horizontal|top"
+                    android:orientation="vertical">
+
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/asname"
+
+                                android:layout_width="match_parent"
+
+                                android:gravity="center"
+
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="2dp"
+
+
+                                android:textColor="@color/night"
+                                android:textSize="28sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/night"></View>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/biogh"
+
+
+                            android:padding="5dp"
+                            android:background="#fff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="5dp"
+
+
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            tools:layout_editor_absoluteX="16dp">
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="vertical">
+
+
+
+
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+
+
+
+
+
+                                    <TextView
+                                        android:id="@+id/aslocation"
+                                        android:layout_width="wrap_content"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textAlignment="center"
+
+
+                                        android:textColor="@color/night"
+                                        android:textSize="18sp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/asdate"
+                                        android:layout_width="wrap_content"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+
+
+                                        android:textAlignment="center"
+
+                                        android:textColor="@color/night"
+                                        android:textSize="12sp"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/asflag"
+
+                                        android:layout_weight="1"
+
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+
+
+
+
+                                        android:layout_gravity="center"
+                                        android:scaleType="centerCrop"
+                                        android:textColor="@color/night"
+                                        android:textStyle="bold"
+                                        app:civ_border_color="@color/night"
+                                        app:civ_border_width="1dp"/>
+
+                                    <TextView
+                                        android:id="@+id/ascountry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        app:textAllCaps="true"
+                                        android:textAlignment="center"
+                                        android:layout_marginLeft="5dp"
+
+                                        android:textColor="@color/night"
+                                        android:textSize="18sp"
+                                        />
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/biog"
+
+                            android:background="#fff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="5dp"
+
+                            android:padding="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            tools:layout_editor_absoluteX="16dp">
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+
+
+
+
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textAlignment="center"
+                                        android:textStyle="bold"
+                                        android:text="-- Biography --"
+                                        android:layout_weight="1"
+
+                                        android:textColor="@color/night"
+                                        android:textSize="18sp"
+                                        />
+
+
+
+
+
+
+
+                                    <TextView
+                                        android:id="@+id/bio"
+                                        android:layout_width="match_parent"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+
+
+
+                                        android:scrollbars = "vertical"
+
+                                        android:textAlignment="center"
+
+                                        android:textColor="@color/night"
+                                        android:textSize="12sp"
+                                        />
+
+
+                                </LinearLayout>
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/social"
+
+                            android:background="#fff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="5dp"
+
+                            android:padding="5dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            tools:layout_editor_absoluteX="16dp">
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+
+                                        android:layout_width="25dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/twitter"
+
+                                        />
+
+
+                                    <TextView
+                                        android:id="@+id/t_link"
+                                        android:layout_width="wrap_content"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+
+                                        android:layout_weight="1"
+                                        android:textAlignment="center"
+
+                                        android:textColor="@color/night"
+                                        android:textSize="18sp"
+                                        />
+
+
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>
