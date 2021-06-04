@@ -125,26 +125,6 @@ lottieAnimationView = findViewById(R.id.moon);
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private void loadHeroList() {
         //getting the progressbar
 
